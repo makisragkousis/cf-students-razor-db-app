@@ -1,6 +1,16 @@
-﻿namespace StudentsApp.Exceptions
+﻿namespace StudentsApp.Exceptions;
+
+public class StudentNotFoundException : Exception
 {
-    public class StudentNotFoundException
+    public StudentNotFoundException() { }
+
+    public StudentNotFoundException(string message) : base(message)
     {
+
+    }
+
+    public StudentNotFoundException(string message, Exception inner) : base(message, inner)
+    {
+
     }
 }
